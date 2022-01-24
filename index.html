@@ -1,26 +1,54 @@
-<h1>Hello Web!</h1>
-<h2>By Camille Volk</h2>
-<h3>This web page is for EW432. And I don't know what to put into a table.
+<html>
+  <head>
+    <h1 id="IndexHeader">Hello Web!</h1>
+    <h2>By Camille Volk</h2>
+    <style> 
+      #grad1 {
+        height: 200px;
+        background-color: #cccccc;
+        background-image: linear-gradient(rgb(133, 210, 245), rgb(63, 150, 156), rgb(53, 109, 126));
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="External.css">
+  <body>
+    <h3>This web page is for EW432. And I don't know what to put into a table.
     Pictures are very difficult to place around a page.
-</h3>
-    <table>
-        <tr>
-          <th>This</th>
-          <th>Is the</th>
-          <th>Header</th>
-        </tr>
-        <tr>
-          <td>First</td>
-          <td>Row of</td>
-          <td>Info</td>
-        </tr>
-        <tr>
-          <td>Second</td>
-          <td>Row of</td>
-          <td>Info</td>
-        </tr>
-      </table>
-<h3> Here is link to learn more about me. <a href = "aboutme.html">About Me</a>
-</h3>
-<body bgcolor = "#D4CFFF">
+    </h3>
+    <table id = "table1">
+      <tr>
+        <th>This</th>
+        <th>Is the</th>
+        <th>Header</th>
+      </tr>
+      <tr>
+        <td>First</td>
+        <td>Row of</td>
+        <td>Info</td>
+      </tr>
+      <tr>
+        <td>Second</td>
+        <td>Row of</td>
+        <td>Info</td>
+      </tr>
+    </table>
+    <div id="grad1"></div>
+    <h3> Here is link to learn more about me. <a href = "aboutme.html">About Me</a>
+    </h3>
+  </body>
+</html>
 
+
+
+MVC - Architecture
+The html is the view of the content.
+The controller is in charge of what veiw is being presneted.
+server is all about producing veiws or html files
+We can create these page dynamics to display veiws however we want 
+we will be producing .rb or .py - controller functions
+the controller function returns the code that produces the veiw
+The last part of the architecture is the model
+We will need a database that holds all of the information
+that we may want to sell on the e-commerce sheet - essentially
+an excel sheet.
+We will need to program objects (models) 
